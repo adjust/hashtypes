@@ -1,6 +1,6 @@
 # $PostgreSQL$
 
-HASHTYPESVERSION = 0.1.2
+HASHTYPESVERSION = 0.1.3
 MODULES = hashtypes
 EXTENSION = hashtypes
 DOCS = README.hashtypes
