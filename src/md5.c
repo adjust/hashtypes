@@ -75,7 +75,7 @@ md5_recv(PG_FUNCTION_ARGS)
 
 	result = palloc(sizeof(Md5));
 
-	pq_copymsgbytes(buf, result->bytes, nbytes);
+	pq_copymsgbytes(buf, (char *) result->bytes, nbytes);
 
 	PG_RETURN_MD5(result);
 }
