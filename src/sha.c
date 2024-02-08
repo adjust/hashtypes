@@ -11,7 +11,17 @@
  *
  * Portions Copyright (c) 2001-2009, PostgreSQL Global Development Group
  */
+
+// pg16-compability
 #include "postgres.h"
+#ifndef SET_VARSIZE
+/*
+ * pg >= 16 reorganized the toastable header files
+ * https://github.com/postgres/postgres/commit/d952373a987bad331c0e499463159dd142ced1ef
+ * to ensure cross version compatibility we do a bit of a hack here
+ */
+#include "varatt.h"
+#endif
 
 #include "access/hash.h"
 #include "common.h"
