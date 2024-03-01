@@ -1,5 +1,8 @@
 *.o
 *.so
+*.dylib
+
+
 sha*.sql.in
 sha*.sql
 sha*.c
