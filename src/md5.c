@@ -13,6 +13,9 @@
 #include "fmgr.h"
 #include "utils/builtins.h"
 #include "libpq/pqformat.h"
+#if PG_VERSION_NUM >= 160000
+#include "varatt.h"
+#endif
 
 #define MD5_LENGTH	16
 

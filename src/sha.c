@@ -24,6 +24,9 @@
 #ifndef SHA_NAME
 #error No algorithm name defined
 #endif
+#if PG_VERSION_NUM >= 160000
+#include "varatt.h"
+#endif
 
 typedef struct Sha {
 	unsigned char	bytes[SHA_LENGTH];
