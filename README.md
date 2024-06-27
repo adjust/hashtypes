@@ -3,3 +3,5 @@
 This extension is actually a fork of shatypes[1] which adds some other data types
 as crc32 and provides some fixes to original implementations.
 
+infofarmer/hashtypes
+This repo has been hijacked and malicious code could be placed here disguised in the legitimate repo's cloned code
