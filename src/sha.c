@@ -60,20 +60,20 @@ typedef struct Sha {
 #define hash_function funcname(sha_hash, SHA_NAME)
 
 
-Datum input_function(PG_FUNCTION_ARGS);
-Datum output_function(PG_FUNCTION_ARGS);
-Datum sha_to_text_fn(PG_FUNCTION_ARGS);
-Datum text_to_sha_fn(PG_FUNCTION_ARGS);
-Datum bytea_to_sha_fn(PG_FUNCTION_ARGS);
-Datum sha_to_bytea_fn(PG_FUNCTION_ARGS);
-Datum cmp_function(PG_FUNCTION_ARGS);
-Datum equal_function(PG_FUNCTION_ARGS);
-Datum notequal_function(PG_FUNCTION_ARGS);
-Datum ge_function(PG_FUNCTION_ARGS);
-Datum gt_function(PG_FUNCTION_ARGS);
-Datum le_function(PG_FUNCTION_ARGS);
-Datum lt_function(PG_FUNCTION_ARGS);
-Datum hash_function(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum input_function(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum output_function(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum sha_to_text_fn(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum text_to_sha_fn(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum bytea_to_sha_fn(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum sha_to_bytea_fn(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum cmp_function(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum equal_function(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum notequal_function(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum ge_function(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum gt_function(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum le_function(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum lt_function(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum hash_function(PG_FUNCTION_ARGS);
 
 
 /*

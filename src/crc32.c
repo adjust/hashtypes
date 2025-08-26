@@ -1,10 +1,15 @@
 #include "postgres.h"
 #include "fmgr.h"
 
+#include <stdint.h>
+
 typedef uint32 crc32;
 
 #define PG_GETARG_CRC32(N)    PG_GETARG_UINT32(N)
 #define PG_RETURN_CRC32(X)    PG_RETURN_UINT32(X)
+
+PGDLLEXPORT Datum crc32_in(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum crc32_out(PG_FUNCTION_ARGS);
 
 PG_FUNCTION_INFO_V1(crc32_in);
 Datum
