@@ -16,9 +16,7 @@
 
 PG_MODULE_MAGIC;
 
-#ifndef SET_VARSIZE
-#define SET_VARSIZE(PTR, len) (VARATT_SIZEP(PTR) = len)
-#endif
+/* SET_VARSIZE is provided by all supported PostgreSQL versions. */
 
 static const int8 hexlookup[128] = {
     -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
